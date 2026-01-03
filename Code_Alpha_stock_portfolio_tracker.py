@@ -25,3 +25,16 @@ print("📈 Welcome to Stock Portfolio Tracker")
 print("Available stocks and prices:")
 for stock, price in stock_prices.items():
     print(f"{stock} : ₹{price}")
+
+print("\nEnter stock details (type 'done' to finish):")
+
+# Input loop
+while True:
+    stock_name = input("Enter stock name: ").upper()
+
+    if stock_name == "DONE":
+        break
+
+    if stock_name not in stock_prices:
+        print("❌ Stock not available. Please choose from the list.\n")
+        continue
