@@ -58,3 +58,6 @@ for stock, qty in portfolio.items():
     investment = stock_prices[stock] * qty
     total_investment += investment
     print(f"{stock} | Quantity: {qty} | Value: ₹{investment}")
+
+print("----------------------")
+print(f"💰 Total Investment Value: ₹{total_investment}")
