@@ -49,3 +49,12 @@ while True:
 
     portfolio[stock_name] = portfolio.get(stock_name, 0) + quantity
     print("✅ Stock added successfully!\n")
+
+# Calculate total investment
+print("\n📊 Portfolio Summary:")
+print("----------------------")
+
+for stock, qty in portfolio.items():
+    investment = stock_prices[stock] * qty
+    total_investment += investment
+    print(f"{stock} | Quantity: {qty} | Value: ₹{investment}")
