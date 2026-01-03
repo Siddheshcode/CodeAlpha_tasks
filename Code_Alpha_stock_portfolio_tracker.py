@@ -38,3 +38,14 @@ while True:
     if stock_name not in stock_prices:
         print("❌ Stock not available. Please choose from the list.\n")
         continue
+    try:
+        quantity = int(input("Enter quantity: "))
+        if quantity <= 0:
+            print("❌ Quantity must be greater than zero.\n")
+            continue
+    except ValueError:
+        print("❌ Please enter a valid number.\n")
+        continue
+
+    portfolio[stock_name] = portfolio.get(stock_name, 0) + quantity
+    print("✅ Stock added successfully!\n")
