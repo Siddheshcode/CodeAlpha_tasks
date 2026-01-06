@@ -19,3 +19,9 @@ elif user_input == "what can you do?":
     return "I can chat with you using simple rules."
 else:  
     return "Sorry, I don't understand that."
+
+#Main program loop
+
+print("🤖 Chatbot is running...")
+print("Type 'hello', 'how are you', or 'bye' to chat.")
+print("Type 'bye' to exit.\n")
