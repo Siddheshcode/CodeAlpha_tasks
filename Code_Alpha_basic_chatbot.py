@@ -25,3 +25,11 @@ else:
 print("🤖 Chatbot is running...")
 print("Type 'hello', 'how are you', or 'bye' to chat.")
 print("Type 'bye' to exit.\n")
+
+while True:
+    user_input = input("You: ")
+    response = chatbot_response(user_input)
+    print("Bot:", response)
+
+    if user_input.lower() == "bye":
+        break
